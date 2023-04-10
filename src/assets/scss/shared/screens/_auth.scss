@@ -1,12 +1,13 @@
 /* Auth */
-
+// auth url("assets/images/auth/login_1.jpg")
+//register url("assets/images/auth/register.jpg") center center no-repeat
 .auth {
 	&.auth-bg-1 {
-	  background: url("assets/images/auth/login_1.jpg");
+	  background: $white;
 	  background-size: cover;
 	}
 	&.register-bg-1 {
-	  background: url("assets/images/auth/register.jpg") center center no-repeat;
+	  background: $white;
 	  background-size: cover;
 	}
 	&.theme-one {
@@ -156,12 +157,13 @@
 				}
 			  }
 			}
+			// background-image: $blue-teal-gradient
 			.submit-btn {
 			  font-family: $type-1;
 			  font-size: 13px;
 			  padding: 11px 33px;
 			  font-weight: 600;
-			  background-image: $blue-teal-gradient;
+			  background-image: $primary;
 			}
 		  }
 		}
@@ -193,17 +195,18 @@
 			justify-content: center;
 		  }
 		}
-	  }
+	  }//bg-1: url("assets/images/auth/login_2.jpg") no-repeat center center
+	  //bg-2: url("assets/images/auth/register_2.jpg") no-repeat center center
 	  .banner-section {
 		padding-right: 0;
 		.slide-content {
 		  width: 100%;
 		  &.bg-1 {
-			background: url("assets/images/auth/login_2.jpg") no-repeat center center;
+			background: $white;
 			background-size: cover;
 		  }
 		  &.bg-2 {
-			background: url("assets/images/auth/register_2.jpg") no-repeat center center;
+			background: $white ;
 			background-size: cover;
 		  }
 		}

@@ -56,7 +56,7 @@
       </div>
       <div class="form-group">
         <VuePhoneNumberInput
-          :default-country-code="'IN'"
+          :default-country-code="'EG'"
           :required="true"
           v-model="register.phone"
           :no-example="true"
@@ -97,7 +97,7 @@
         </div>
       </div>
       <div class="form-group">
-        <button class="btn btn-primary submit-btn">SIGN IN</button>
+        <button class="btn btn-primary submit-btn">REGISTER</button>
       </div>
       <div class="wrapper mt-5 text-gray">
         <p class="footer-text">
