@@ -328,37 +328,7 @@
           </button>
         </div>
       </b-form-group>
-      <b-form-group
-        label="Certificate Pollution"
-        label-for="certificate-pollution-input"
-        label-cols-sm="4"
-        label-cols-lg="3"
-        content-cols-sm
-        content-cols-lg="7"
-      >
-        <div v-if="!form.certificate_pollution">
-          <b-form-file
-            id="certificate-pollution-input"
-            accept="image/jpeg, image/png, image/gif"
-            placeholder="Choose a certificate pollution or drop it here..."
-            @change="onFileChange($event, 'certificate_pollution')"
-          ></b-form-file>
-        </div>
-        <div v-else>
-          <img
-            class="img-fluid"
-            :src="form.certificate_pollution"
-            width="350"
-            height="250"
-          />
-          <button
-            class="btn social-btn btn-rounded btn-danger mr-4"
-            @click="removeImage('certificate_pollution')"
-          >
-            <i class="mdi mdi-close"></i>
-          </button>
-        </div>
-      </b-form-group>
+      
       <b-form-group
         label="Certificate Insurance"
         label-for="certificate-insurance-input"
@@ -389,76 +359,6 @@
             <i class="mdi mdi-close"></i>
           </button>
         </div>
-      </b-form-group>
-
-      <b-form-group
-        label="Certificate Fitness"
-        label-for="certificate-fitness-input"
-        label-cols-sm="4"
-        label-cols-lg="3"
-        content-cols-sm
-        content-cols-lg="7"
-      >
-        <div v-if="!form.certificate_fitness">
-          <b-form-file
-            id="certificate-fitness-input"
-            accept="image/jpeg, image/png, image/gif"
-            placeholder="Choose a certificate fitness or drop it here..."
-            @change="onFileChange($event, 'certificate_fitness')"
-          ></b-form-file>
-        </div>
-        <div v-else>
-          <img
-            class="img-fluid"
-            :src="form.certificate_fitness"
-            width="350"
-            height="250"
-          />
-          <button
-            class="btn social-btn btn-rounded btn-danger mr-4"
-            @click="removeImage('certificate_fitness')"
-          >
-            <i class="mdi mdi-close"></i>
-          </button>
-        </div>
-      </b-form-group>
-
-      <b-form-group
-        label="Certificate Permit"
-        label-for="certificate-permit-input"
-        label-cols-sm="4"
-        label-cols-lg="3"
-        content-cols-sm
-        content-cols-lg="7"
-      >
-        <div v-if="!form.certificate_permit">
-          <b-form-file
-            id="certificate-ermit-input"
-            accept="image/jpeg, image/png, image/gif"
-            placeholder="Choose a certificate permit or drop it here..."
-            @change="onFileChange($event, 'certificate_permit')"
-          ></b-form-file>
-        </div>
-        <div v-else>
-          <img
-            class="img-fluid"
-            :src="form.certificate_permit"
-            width="350"
-            height="250"
-          />
-          <button
-            class="btn social-btn btn-rounded btn-danger mr-4"
-            @click="removeImage('certificate_permit')"
-          >
-            <i class="mdi mdi-close"></i>
-          </button>
-        </div>
-      </b-form-group>
-
-      <b-form-group class="col-md-6 offset-md-5">
-        <b-button type="submit" class="btn btn-lg btn-success text-center"
-          >Submit</b-button
-        >
       </b-form-group>
     </b-form>
   </div>

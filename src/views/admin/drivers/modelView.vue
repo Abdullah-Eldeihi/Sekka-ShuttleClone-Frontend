@@ -36,7 +36,7 @@
               :src="modalData.document_licence"
             ></b-img
           ></b-col>
-          <b-col cols="4">Adhar Card</b-col>
+          <b-col cols="4">National ID</b-col>
           <b-col cols="8"
             ><b-img
               class="img-fluid"

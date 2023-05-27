@@ -60,7 +60,7 @@
         </v-select>
       </b-form-group>
       <b-form-group
-        label="Assistant"
+        label="Bus"
         label-for="name-input"
         label-cols-sm="4"
         label-cols-lg="3"
@@ -186,14 +186,14 @@ export default {
     },
     fetchDrivers(search, loading) {
       if (search.length) {
-        loading(true);
+        loading(false);
         let type = "driver";
         this.search(loading, search, type, this);
       }
     },
     fetchAssistants(search, loading) {
       if (search.length) {
-        loading(true);
+        loading(false);
         let type = "assistant";
         this.search2(loading, search, type, this);
       }

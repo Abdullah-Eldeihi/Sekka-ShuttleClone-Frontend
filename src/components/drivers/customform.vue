@@ -208,7 +208,7 @@
         </div>
       </b-form-group>
       <b-form-group
-        label="Adhar Card"
+        label="National Card"
         label-for="adhar-card-input"
         label-cols-sm="4"
         label-cols-lg="3"
@@ -219,7 +219,7 @@
           <b-form-file
             id="adhar-card-input"
             accept="image/jpeg, image/png, image/gif"
-            placeholder="Choose a Adhar Card or drop it here..."
+            placeholder="Choose a national ID or drop it here..."
             @change="onFileChange($event, 'document_adhar_card')"
           ></b-form-file>
         </div>
@@ -233,38 +233,6 @@
           <button
             class="btn social-btn btn-rounded btn-danger mr-4"
             @click="removeImage('document_adhar_card')"
-          >
-            <i class="mdi mdi-close"></i>
-          </button>
-        </div>
-      </b-form-group>
-      <b-form-group
-        label="Police Vertification"
-        label-for="police-vertification-input"
-        label-cols-sm="4"
-        label-cols-lg="3"
-        content-cols-sm
-        content-cols-lg="7"
-        v-if="show"
-      >
-        <div v-if="!form.document_police_vertification">
-          <b-form-file
-            id="police-vertification-input"
-            accept="image/jpeg, image/png, image/gif"
-            placeholder="Choose a Police Vertification or drop it here..."
-            @change="onFileChange($event, 'document_police_vertification')"
-          ></b-form-file>
-        </div>
-        <div v-else>
-          <img
-            class="img-fluid"
-            :src="form.document_police_vertification"
-            width="250"
-            height="250"
-          />
-          <button
-            class="btn social-btn btn-rounded btn-danger mr-4"
-            @click="removeImage('document_police_vertification')"
           >
             <i class="mdi mdi-close"></i>
           </button>

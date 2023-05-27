@@ -18,7 +18,7 @@
       </b-form-group>
 
       <b-form-group
-        label="Razorpay Logo"
+        label="Logo"
         label-for="logo-input"
         label-cols-sm="4"
         label-cols-lg="3"
@@ -50,7 +50,7 @@
       </b-form-group>
 
       <b-form-group
-        label="Razorpay Key"
+        label="Key"
         label-for="key-input"
         class="mt-3"
         label-cols-sm="4"
@@ -58,24 +58,24 @@
         content-cols-sm
         content-cols-lg="7"
       >
-        <b-input v-model="form.payments.key" placeholder="Razorpay key">
+        <b-input v-model="form.payments.key" placeholder="key">
         </b-input>
       </b-form-group>
 
       <b-form-group
-        label="Razorpay Secret"
+        label="Secret"
         label-for="secret-input"
         label-cols-sm="4"
         label-cols-lg="3"
         content-cols-sm
         content-cols-lg="7"
       >
-        <b-input v-model="form.payments.secret" placeholder="Razorpay secret">
+        <b-input v-model="form.payments.secret" placeholder="secret">
         </b-input>
       </b-form-group>
 
       <b-form-group
-        label="Razorpay Text"
+        label="Text"
         label-for="text-input"
         class="mt-3"
         label-cols-sm="4"
@@ -85,7 +85,7 @@
       >
         <b-input
           v-model="form.payments.text_name"
-          placeholder="Pay via TheFerri"
+          placeholder=""
         >
         </b-input>
       </b-form-group>

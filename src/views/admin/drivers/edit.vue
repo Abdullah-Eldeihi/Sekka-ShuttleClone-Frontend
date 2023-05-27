@@ -221,7 +221,7 @@
                   </div>
                 </b-form-group>
                 <b-form-group
-                  label="Adhar Card"
+                  label="National ID"
                   label-for="adhar-card-input"
                   label-cols-sm="4"
                   label-cols-lg="3"
@@ -233,7 +233,7 @@
                     <b-form-file
                       id="adhar-card-input"
                       accept="image/jpeg, image/png, image/gif"
-                      placeholder="Choose a Adhar Card or drop it here..."
+                      placeholder="Choose a National ID or drop it here..."
                       @change="onFileChange($event, 'document_adhar_card')"
                     ></b-form-file>
                   </div>

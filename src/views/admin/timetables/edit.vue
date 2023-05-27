@@ -386,7 +386,7 @@ export default {
     },
     fetchRoutes(search, loading) {
       if (search.length) {
-        loading(true);
+        loading(false);
         this.search(loading, search, this);
       }
     },

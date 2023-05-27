@@ -223,14 +223,14 @@ export default {
     },
     fetchDrivers(search, loading) {
       if (search.length) {
-        loading(true);
+        loading(false);
         let type = "driver";
         this.search(loading, search, type, this);
       }
     },
     fetchAssistants(search, loading) {
       if (search.length) {
-        loading(true);
+        loading(false);
         let type = "assistant";
         this.search2(loading, search, type, this);
       }

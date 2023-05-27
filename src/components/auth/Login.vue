@@ -73,9 +73,12 @@ export default {
     };
   },
   computed: {
+    console: () => console,
+    window: () => window,
     loggingIn() {
       return this.$store.state.auth.status.loggingIn;
     },
+    
   },
   created() {
     this.$store.dispatch("auth/logout");
@@ -84,6 +87,7 @@ export default {
     loginUser() {
       const { email, password } = this;
       const { dispatch } = this.$store;
+      
       if (email && password) {
         dispatch("auth/login", { email, password });
       }

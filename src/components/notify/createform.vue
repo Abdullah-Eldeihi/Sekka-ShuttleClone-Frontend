@@ -363,7 +363,7 @@ export default {
     },
     fetchUsers(search, loading) {
       if (search.length) {
-        loading(true);
+        loading(false);
         this.search(loading, search, this.form.user_type, this);
       }
     },

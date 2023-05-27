@@ -148,8 +148,8 @@
                     </td> -->
                     <td>
                       <div class="row">
-                        <label class="col-sm-3">if pick-up</label>
-                        <div class="col-sm-9">
+                        <label class="col-sm-4">pick-up</label>
+                        <div class="col-sm-8">
                           <input
                             type="number"
                             class="form-control"
@@ -159,8 +159,8 @@
                         </div>
                       </div>
                       <div class="row">
-                        <label class="col-sm-3">if drop</label>
-                        <div class="col-sm-9">
+                        <label class="col-sm-4">drop</label>
+                        <div class="col-sm-8">
                           <input
                             type="number"
                             class="form-control"
@@ -173,47 +173,43 @@
 
                     <td>
                       <div class="row">
-                        <label class="col-sm-3">if pick-up</label>
+                        <label class="col-sm-3">pick-up</label>
                         <div class="col-sm-9">
                           <div class="input-group">
                             <div class="input-group-prepend">
                               <span
                                 class="input-group-text bg-primary text-white"
-                                >₹</span
+                                >E£</span
                               >
                             </div>
                             <input
                               type="text"
                               v-model="data.price_per_km_pickup"
                               class="form-control"
-                              aria-label="Amount (to the nearest rupee)"
+                              aria-label="Amount (to the nearest EGP)"
                             />
-                            <div class="input-group-append">
-                              <span class="input-group-text">.00</span>
-                            </div>
+                            
                           </div>
                         </div>
                       </div>
 
                       <div class="row">
-                        <label class="col-sm-3">if drop</label>
+                        <label class="col-sm-3">drop</label>
                         <div class="col-sm-9">
                           <div class="input-group">
                             <div class="input-group-prepend">
                               <span
                                 class="input-group-text bg-primary text-white"
-                                >₹</span
+                                >E£</span
                               >
                             </div>
                             <input
                               type="text"
                               v-model="data.price_per_km_drop"
                               class="form-control"
-                              aria-label="Amount (to the nearest rupee)"
+                              aria-label="Amount (to the nearest EGP)"
                             />
-                            <div class="input-group-append">
-                              <span class="input-group-text">.00</span>
-                            </div>
+                            
                           </div>
                         </div>
                       </div>
@@ -411,7 +407,7 @@ export default {
     },
     fetchLocations(search, loading) {
       if (search.length) {
-        loading(true);
+        loading(false);
         let type = "DA";
         this.search(loading, search, type, this);
       }
@@ -435,7 +431,7 @@ export default {
     }, 350),
     fetchPDLocations(search, loading) {
       if (search.length) {
-        loading(true);
+        loading(false);
         let type = "PD";
         this.pdSearch(loading, search, type, this);
       }

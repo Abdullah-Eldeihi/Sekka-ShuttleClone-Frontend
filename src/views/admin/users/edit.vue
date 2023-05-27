@@ -86,7 +86,7 @@
                     v-if="submitted && !$v.form.email.ValidEmailDomain"
                     class="invalid-feedback"
                   >
-                    email address end with @theferri.com is required
+                    Invalid email address.
                   </div>
                 </b-form-group>
 
@@ -284,8 +284,9 @@ import { userService, roleService, cityService } from "../../../services";
 import Multiselect from "vue-multiselect";
 
 const ValidEmailDomain = (mailaddr) => {
-  var re = /.+@(theferri|ferri)\.com$/;
-  return re.test(mailaddr);
+  //var re = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
+  //return re.test(mailaddr);
+  return true;
 };
 
 export default {

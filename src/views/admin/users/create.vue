@@ -86,7 +86,7 @@
                     v-if="submitted && !$v.form.email.ValidEmailDomain"
                     class="invalid-feedback"
                   >
-                    email address end with @theferri.com is required
+                    Invalid email address.
                   </div>
                 </b-form-group>
 
@@ -245,21 +245,6 @@
                   ></b-form-textarea>
                 </b-form-group>
 
-                <b-form-group
-                  label="Pincode"
-                  label-for="pincode-input"
-                  label-cols-sm="4"
-                  label-cols-lg="3"
-                  content-cols-sm
-                  content-cols-lg="7"
-                >
-                  <b-form-input
-                    id="pincode-input"
-                    v-model.trim="form.pincode"
-                    placeholder="Enter Pincode"
-                  ></b-form-input>
-                </b-form-group>
-
                 <b-form-group class="col-md-6 offset-md-4">
                   <b-button
                     type="submit"
@@ -284,8 +269,9 @@ import { userService, roleService, cityService } from "../../../services";
 import Multiselect from "vue-multiselect";
 
 const ValidEmailDomain = (mailaddr) => {
-  var re = /.+@(theferri|ferri)\.com$/;
-  return re.test(mailaddr);
+  //var re = /.+@(theferri|ferri)\.com$/;
+  //return re.test(mailaddr);
+  return true;
 };
 
 export default {

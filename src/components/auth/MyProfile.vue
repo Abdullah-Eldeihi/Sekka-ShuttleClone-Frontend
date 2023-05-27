@@ -51,7 +51,7 @@
                 label-for="input-phone"
               >
                 <VuePhoneNumberInput
-                  :default-country-code="'IN'"
+                  :default-country-code="'EG'"
                   :required="true"
                   v-model="form.phone"
                   :no-example="true"
@@ -100,7 +100,7 @@
             </div>
             <p class="description text-center">
               {{ user.email }} <br />
-              +91-{{ user.phone }} <br />        
+              +20-{{ user.phone }} <br />        
             </p>
           </b-card-body>
           <b-card-footer> </b-card-footer>

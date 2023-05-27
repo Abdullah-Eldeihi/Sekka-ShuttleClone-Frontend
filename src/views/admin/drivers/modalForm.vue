@@ -63,7 +63,7 @@
               content-cols-lg="7"
             >
               <VuePhoneNumberInput
-                :default-country-code="'IN'"
+                :default-country-code="'EG'"
                 :required="true"
                 v-model="form.phone"
                 :no-example="true"
@@ -128,9 +128,9 @@
             </b-form-group>
 
             <b-form-group
-              label="Adhar Card "
+              label="National Card"
               label-for="adhar-card-input"
-              invalid-feedback="Adhar card is required"
+              invalid-feedback="National ID is required"
               class="mt-3"
               label-cols-sm="4"
               label-cols-lg="3"
@@ -139,7 +139,7 @@
             >
               <b-form-file
                 accept="image/jpeg, image/png, image/gif"
-                placeholder="Choose a adhar card or drop it here..."
+                placeholder="Choose a national ID or drop it here..."
               ></b-form-file>
               <b-img
                 width="75"
@@ -149,9 +149,9 @@
             </b-form-group>
 
             <b-form-group
-              label="Adhar Card "
+              label="National ID"
               label-for="adhar-card-input"
-              invalid-feedback="Adhar card is required"
+              invalid-feedback="National ID is required"
               class="mt-3"
               label-cols-sm="4"
               label-cols-lg="3"
@@ -160,7 +160,7 @@
             >
               <b-form-file
                 accept="image/jpeg, image/png, image/gif"
-                placeholder="Choose a adhar card or drop it here..."
+                placeholder="Choose a national ID or drop it here..."
               ></b-form-file>
               <b-img
                 width="75"
